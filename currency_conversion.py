@@ -22,6 +22,7 @@ def get_currency_ratio(src_currency, dst_currency):
     assert src_currency in currency_rates
     assert dst_currency in currency_rates
 
+    # Return ration between the value of the destination currency and the source currency
     return currency_rates[dst_currency] / currency_rates[src_currency]
 
 

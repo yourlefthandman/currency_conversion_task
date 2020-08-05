@@ -37,5 +37,5 @@ def test_currency_ratios_different_currencies():
     # Get actual ratio
     current_ratio = currency_conversion.get_currency_ratio(src_currency, dst_currency)
 
-    # Assert ratios are similar
+    # Assert ratios are similar (current ratio has changed a maximum of 50%)
     assert current_ratio == pytest.approx(test_ratio, rel=0.5)
